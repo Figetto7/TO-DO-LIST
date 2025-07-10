@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semplice To Do List</title>
+    <link rel="stylesheet" href="TO-DO-LIST.css" />
+  </head>
+  <body>
+    <div id="sinistra">
+      <h1>Inserisci un nuovo impegno</h1>
+      <form id="form">
+        <input
+          type="text"
+          id="titoloTask"
+          placeholder="Cosa devi fare?"
+          required
+        />
+        <div>
+          <button type="submit" id="aggiungi">Aggiungi</button>
+          <button type="button" id="annulla">Annulla</button>
+        </div>
+      </form>
+    </div>
+    <div id="destra">
+      <h1>lista Task</h1>
+      <ul id="listaTask"></ul>
+    </div>
+
+    <script src="TO-DO-LIST.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  background-color:honeydew;
+}
+
+#sinistra {
+  width: 50%;
+  height: 100vh;
+  padding:20px;
+}
+
+#destra {
+  width: 50%;
+  height: 100vh;
+  padding:20px;
+}
+
+h1{
+  text-align:center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aggiungi, #annulla {
+  text-align:center;
+  display:inline-block;
+}
+
+
+#listaTask {
+  list-style-type: circle;
+} 
+
+
+.completata {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+
+h1 {
+  color: darkgreen;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#titoloTask {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width:200px;
+  height:50px;
+}
+
+#titoloTask:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.25);
+  transform: translateY(-2px);
+}
+
+#titoloTask::placeholder, #descrizioneTask::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+#listaTask {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#listaTask li {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#listaTask li:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+#listaTask li span {
+  flex-grow: 1;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+#listaTask li button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#listaTask li button:hover {
+  background: #0056b3;
+}
+
+#listaTask li button.elimina {
+  background: #dc3545;
+}
+
+#listaTask li button.elimina:hover {
+  background: #c82333;
+}
+
+#listaTask li button.completa {
+  background: #28a745;
+}
+
+#listaTask li button.completa:hover {
+  background: #218838;
+}
+
+.completata {
+  text-decoration: line-through;
+  opacity: 0.6;
+  background: #f8f9fa !important;
+}
